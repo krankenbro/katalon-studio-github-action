@@ -16,6 +16,11 @@ inputs:
             required: true
             default: ''
 
+      xvfbConfiguration:
+            description: 'Configuration for Xvfb'
+            required: false
+            default: '-a -n 0 -s "-screen 0 1920x1080x24"'
+
 runs:
       using: 'node12'
       main: 'index.js'

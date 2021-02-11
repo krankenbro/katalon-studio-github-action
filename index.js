@@ -4,9 +4,10 @@ const core = require("@actions/core");
 const user_version = core.getInput("version");
 const user_projectPath = core.getInput("projectPath");
 const user_args = core.getInput("args");
+const xvfbConf = core.getInput("xvfbConfiguration");
 
 try {
-  execute(user_version, "", user_projectPath, user_args, "", "", {
+  execute(user_version, "", user_projectPath, user_args, "", xvfbConf, {
     info: function (message) {
       console.log(message);
     },
