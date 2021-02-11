@@ -7,7 +7,7 @@ const user_args = core.getInput("args");
 const xvfbConf = core.getInput("xvfbConfiguration");
 
 try {
-  execute(user_version, "", user_projectPath, user_args, "", xvfbConf, {
+  execute(user_version, "", user_projectPath, user_args, "", '-a -n 99 -s "-screen 99 1920x1080x24"', {
     info: function (message) {
       console.log(message);
     },
