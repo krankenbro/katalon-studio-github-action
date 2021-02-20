@@ -8,7 +8,7 @@ const xvfbConf = core.getInput("xvfbConfiguration");
 
 try {
   process.env.DISPLAY=":0";
-  execute(user_version, "", user_projectPath, user_args, "", "--server-num=1  --server-args='-screen 0, 1600x1200x32'", { // -n 99 --server-args="-screen 99 1920x1080x24
+  execute(user_version, "", user_projectPath, user_args, "", "--server-num=99  --server-args='-screen 0, 1600x1200x32'", { // -n 99 --server-args="-screen 99 1920x1080x24
     info: function (message) {
       console.log(message);
     },
